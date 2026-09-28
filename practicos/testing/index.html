@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mission Control</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="hero">
+    <p class="eyebrow">Testing con IA</p>
+    <h1>Mission Control</h1>
+    <p class="intro">Gestion de misiones espaciales para practicar dominio, tests y refactor guiado por IA.</p>
+  </header>
+
+  <main class="layout">
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Nueva mision</h2>
+        <p>Usa esta pantalla para cargar una mision y luego validar su comportamiento con tests.</p>
+      </div>
+
+      <form id="mission-form" class="form">
+        <input id="code" type="text" placeholder="Codigo" required>
+        <input id="commander" type="text" placeholder="Comandante" required>
+        <input id="destination" type="text" placeholder="Destino" required>
+        <input id="durationDays" type="number" min="1" placeholder="Duracion en dias" required>
+        <select id="status">
+          <option value="planned">Planned</option>
+          <option value="ready">Ready</option>
+          <option value="launched">Launched</option>
+          <option value="completed">Completed</option>
+          <option value="delayed">Delayed</option>
+        </select>
+        <button type="submit">Agregar mision</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>Misiones cargadas</h2>
+        <p>El panel muestra las misiones registradas en la app de ejemplo.</p>
+      </div>
+      <div id="mission-list" class="cards"></div>
+    </section>
+
+    <aside class="panel">
+      <div class="panel-head">
+        <h2>Resumen</h2>
+        <p>Resumen basico para verificar el comportamiento de la logica.</p>
+      </div>
+      <div id="summary" class="summary"></div>
+    </aside>
+  </main>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

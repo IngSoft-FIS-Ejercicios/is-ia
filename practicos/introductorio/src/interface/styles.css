@@ -1,0 +1,18 @@
+body {
+  background: #f8f9fa;
+}
+
+.card-movie {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.movie-poster {
+  height: 320px;
+  object-fit: cover;
+}
+
+.movie-favorite {
+  border: 2px solid #ffc107;
+  box-shadow: 0 0 0 0.15rem rgba(255, 193, 7, 0.18);
+}
